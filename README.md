@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is a responsive personal portfolio website built with HTML and CSS that showcases skills, projects and education background as well as a contact form section.
+This is a responsive personal portfolio website built with HTML and CSS that showcases skills, projects and education background, interests as well as a contact form section.
 
 ## Features
 
@@ -9,6 +9,7 @@ This is a responsive personal portfolio website built with HTML and CSS that sho
 * Skills section with categorized skills display.
 * Education background section.
 * Projects section with hover effects.
+* Interest section.
 * Contact form section.
 
 ## Technologies used
