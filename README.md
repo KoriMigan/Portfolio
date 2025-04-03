@@ -17,3 +17,7 @@ This is a responsive personal portfolio website built with HTML and CSS that sho
 * CSS
 * Font Awesome(for icons)
 * Boxicons(for icons)
+
+## Deployment
+
+This portfolio has been deployed by use of GitHub pages at [Portfolio](https://korimigan.github.io/Portfolio/)
