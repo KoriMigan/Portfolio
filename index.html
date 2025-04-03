@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    </head>
+    <body>
+
+        <!-- header section -->
+        <header>
+            <nav id="navbar">
+                <div class="container">
+                    <h1>My Portfolio</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- about section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hey there! My name is Fiona Wangui.</p>
+                        <p>I am a data scientist, with a knack for all things machine learning, NLP and AI.</p>
+                        <p>I enjoy crafting scalable backend systems for lightning-fast data crunching, all while dreaming up cool AI solutions that blend data science and software wizardry.</p>
+                        <p>Take a dive into my world of innovation!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section-->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills/Programming Languages</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i> 
+                                <span>Natural Language Processing (NLP)</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-robot"></i> 
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line"></i> 
+                                <span>Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- education section -->
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-cards">
+                    <div class="education-card" onclick="toggleContent(this)">
+                        <h3>Bachelor of Science in Actuarial Science</h3>
+                        <h4>Kabarak University</h4>
+                        <p class="education-date">2019-2022</p>
+                        <div class="education-details">
+                            <p>Pursued Actuarial Science. Focused on mathematical and statistical analysis to manage financial risks by predicting financial impact of future events.</p>
+                        </div>
+                    </div>
+                    <div class="education-card" onclick="toggleContent(this)">
+                        <h3>Data Science Certificate</h3>
+                        <h4>Moringa School</h4>
+                        <p class="education-date">2023</p>
+                        <div class="education-details">
+                            <p>Completed an intensive bootcamp focused on modern data science technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-download">
+                    <a href="CV.pdf" class="btn download-btn" download>
+                        <i class="fas fa-dowload"></i>Download CV
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- projects section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>News Article Classifier</h3>
+                            <p>Introducing the News Ninja project! 📰</p>
+                            <p>This AI marvel accurately classifies East African news articles, hitting an impressive 81% accuracy in predicting Swahili news categories.</p>
+                            <p>The Random Forest model steals the spotlight with its stellar performance - a true news ninja in action!</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>NLP</span>
+                            </div>
+                            <div class="project-links" >
+                                <a href="https://github.com/KoriMigan/News-Classification.git"  class="project-link"><box-icon type='logo' name='github'></box-icon>GitHub</a> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Paper Pal</h3>
+                            <p>Meet my dynamic chatbot- PaperPal! 🌟</p>
+                            <p>It's your PDF-savvy sidekick, zooming through school docs or lengthy reads to fetch the juiciest info in a snap.</p>
+                            <p>Powered by Google's smart chat skills and Facebook's lightning-fast text search, it's your go-to for quick, interactive info nuggets!</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/KoriMigan/ChatBot.git" class="project-link"><box-icon type='logo' name='github'></box-icon></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Sentiment Analysis</h3>
+                            <p>Meet the Sentiment Sherlock project! 🕵️</p>
+                            <p>It's a Twitter guru that sorts tweets into positive, negative or neutral moods with an impressive 61% accuracy.</p>
+                            <p>Fueled by Python prowess and machine learning mastery, this project delves into Twitter product reviews to decipher the underlying sentiment.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/KoriMigan/Sentiment-Analysis.git" class="project-link"><box-icon type='logo' name='github'></box-icon>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- interest section -->
+         <section id="interests">
+            <div class="container">
+                <h2 class="section-title">Interests</h2>
+                <div class="interests-container">
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <p>Passionate about creating high quality computing solutions.</p>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Data Engineering</h3>
+                        <p>Intrigued by the idea of turning raw data into valuable insights that can impact business strategy.</p>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Exploring machine learning algorithms and their practical applications.</p>
+                    </div>
+                    <div class="interest-item">
+                    <div class="interest-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>Designing computer programs by using creative and problem-solving skills.</p>
+                </div>
+            </div>
+         </section>
+
+        <!-- contact section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>wangui.njuguna88@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+254740667932</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Thika, Kenya</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/fiona-wangui/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/KoriMigan" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+         <footer>
+            <div class="container">
+                <p>&copy; 2025 Fiona Wangui. All Rights Reserved</p>
+            </div>
+         </footer>
+
+    </body>
+</html>
